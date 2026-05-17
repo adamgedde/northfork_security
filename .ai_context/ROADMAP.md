@@ -34,7 +34,7 @@ Get the site live on Railway with a working contact form.
 - Railway deployment configuration (`railway.json`, `.nvmrc`, `engines` field)
 - Node 20 version pin (required by Vite 8)
 - Formspree endpoint wired into `ContactForm.tsx`
-- Domain configuration (`northforksecurity.com` — confirm with client)
+- Domain configuration (`northforksecurity.io` — confirm with client)
 - Smoke test on production URL
 
 **Open items:**

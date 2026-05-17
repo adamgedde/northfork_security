@@ -97,7 +97,7 @@ On success: swap form for a confirmation state inside the same card. No page rel
 ## Contact Info
 
 - **Phone:** (320) 228-3541
-- **Email:** info@northforksecurity.com
+- **Email:** info@northforksecurity.io
 - **Service area:** Statewide Minnesota
 
 ---

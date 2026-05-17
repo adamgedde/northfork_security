@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Shield } from "lucide-react";
+import PrivacyPolicyModal from "@/components/PrivacyPolicyModal";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const [privacyOpen, setPrivacyOpen] = useState(false);
   return (
     <footer className="bg-foreground text-white/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
@@ -34,7 +37,12 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-6 text-sm text-white/70 flex-wrap">
               <p className="m-0">© {year} North Fork Security. All rights reserved.</p>
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <button
+                onClick={() => setPrivacyOpen(true)}
+                className="hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </button>
             </div>
             <div className="flex items-center gap-4 text-sm text-white/70">
               <span className="flex items-center gap-2">
@@ -49,6 +57,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <PrivacyPolicyModal open={privacyOpen} onOpenChange={setPrivacyOpen} />
     </footer>
   );
 }

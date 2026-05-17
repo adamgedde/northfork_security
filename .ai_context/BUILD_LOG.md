@@ -44,7 +44,7 @@ Update at the end of every AI coding session. Read at the start of every session
 
 ### Open Questions
 - [ ] What is the real Formspree endpoint URL?
-- [ ] Confirm final domain name (`northforksecurity.com`?)
+- [ ] Confirm final domain name (`northforksecurity.io`?)
 
 ### Next Session Should
 1. Replace Formspree placeholder in `src/components/ContactForm.tsx` with real endpoint
@@ -103,7 +103,7 @@ Update at the end of every AI coding session. Read at the start of every session
 
 ### Open Questions
 - [ ] Real Formspree endpoint URL
-- [ ] Confirm domain name (`northforksecurity.com`?)
+- [ ] Confirm domain name (`northforksecurity.io`?)
 
 ### Next Session Should
 1. Read this file and `ROADMAP.md` before touching anything
