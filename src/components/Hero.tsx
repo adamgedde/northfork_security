@@ -26,7 +26,7 @@ export default function Hero({ onContact }: HeroProps) {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight text-white mb-6">
-            Reliable WiFi. Smarter Security.{" "}
+            Reliable Video Security.{" "}
             <span className="text-accent">Systems That Just Work.</span>
           </h1>
 

@@ -6,10 +6,10 @@ export const videoFeatures = [
 ];
 
 export const services = [
-  { icon: "ClipboardCheck", title: "Security system health check.", text: "A one-time or annual on-site visit to assess any existing camera system - regardless of brand or installer. We check recording, storage, remote access, and firmware, then hand you a written summary." },
-  { icon: "ScanEye",        title: "Coverage audit.",              text: "A property walkthrough focused on what your cameras actually see - and what they miss. We document blind spots, obstructions, lighting, and positioning, with a short report of recommendations." },
-  { icon: "ShieldCheck",    title: "Ongoing maintenance plan.",    text: "A recurring monthly or annual plan covering remote health checks, firmware updates, storage monitoring, and priority response. Set it and forget it peace of mind on any system we can administer." },
-  { icon: "KeyRound",       title: "System takeover.",             text: "For properties with an existing system but no support relationship. We start with a health check to document current condition, then transition into an ongoing maintenance plan." },
+  { icon: "ClipboardCheck", title: "Security system health check.", text: "A one-time or annual on-site visit to assess your existing camera system - regardless of brand or installer. We verify recording, storage, remote access, and firmware, and leave you with a written summary." },
+  { icon: "ScanEye",        title: "Coverage audit.",              text: "A walkthrough of your property to identify what your cameras see - and what they miss. You'll get a written report with recommendations." },
+  { icon: "ShieldCheck",    title: "Ongoing maintenance plan.",    text: "Remote health checks, firmware updates, and storage monitoring on a monthly or annual basis - plus priority response when something goes wrong. Works on any system we can administer." },
+  { icon: "KeyRound",       title: "System takeover.",             text: "Already have a system but no one to call? We'll assess what you've got and take it from there." },
 ];
 
 export const industries = [

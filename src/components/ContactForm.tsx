@@ -22,9 +22,9 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const contactInfo = [
-  { Icon: Phone, title: "Call Us", details: "(320) 228-3541", description: "Speak directly with our security experts" },
-  { Icon: Mail, title: "Email Us", details: "info@northforksecurity.com", description: "Get a detailed response within 24 hours" },
-  { Icon: MapPin, title: "Service Area", details: "Statewide Minnesota", description: "Local service across the state" },
+  { Icon: Phone, title: "Call Us", details: "(320) 228-3541", description: "" },
+  { Icon: Mail, title: "Email Us", details: "info@northforksecurity.io", description: "" },
+  { Icon: MapPin, title: "Service Area", details: "Meeker, Wright, McLeod Counties ", description: "" },
 ];
 
 export default function ContactForm() {

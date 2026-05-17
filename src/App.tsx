@@ -21,7 +21,7 @@ export default function App() {
         <Section id="video-security">
           <SectionHeader
             title="Video security that actually works."
-            lead="Clear footage. Reliable recording. Systems designed for your property's real conditions — not a showroom demo."
+            lead="Clear footage. Reliable recording. Systems designed for your property's real conditions - not a showroom demo."
           />
           <FeatureGrid items={videoFeatures} />
         </Section>
@@ -45,7 +45,7 @@ export default function App() {
         <Section id="contact" tone="section">
           <SectionHeader
             title="Let's take a look at your property."
-            lead="If you're dealing with unreliable WiFi, outdated cameras, or no clear system plan — we'll evaluate it and give you a straightforward recommendation."
+            lead="If you're dealing with unreliable footage, outdated cameras, or no clear system plan - we'll evaluate it and give you a straightforward recommendation."
           />
           <ContactForm />
         </Section>
