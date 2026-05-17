@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background:           0 0% 98%;
+  --foreground:           210 15% 15%;
+  --card:                 0 0% 100%;
+  --card-foreground:      210 15% 15%;
+  --popover:              0 0% 100%;
+  --popover-foreground:   210 15% 15%;
+  --primary:              155 35% 25%;
+  --primary-foreground:   0 0% 98%;
+  --primary-hover:        155 35% 20%;
+  --secondary:            210 40% 94%;
+  --secondary-foreground: 210 15% 25%;
+  --muted:                210 20% 92%;
+  --muted-foreground:     210 15% 45%;
+  --accent:               25 95% 55%;
+  --accent-foreground:    0 0% 98%;
+  --accent-hover:         25 95% 50%;
+  --neutral-light:        210 15% 90%;
+  --neutral:              210 15% 60%;
+  --neutral-dark:         210 15% 30%;
+  --destructive:          0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border:               210 20% 88%;
+  --input:                210 20% 88%;
+  --ring:                 155 35% 25%;
+  --radius:               0.75rem;
+  --radius-sm:            calc(var(--radius) - 4px);
+  --radius-md:            calc(var(--radius) - 2px);
+  --radius-lg:            var(--radius);
+  --radius-xl:            1rem;
+  --radius-full:          9999px;
+  --gradient-hero:    linear-gradient(135deg, hsl(155 35% 25%) 0%, hsl(210 45% 35%) 100%);
+  --gradient-section: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(210 20% 96%) 100%);
+  --gradient-cta:     linear-gradient(135deg, hsl(25 95% 55%) 0%, hsl(25 95% 50%) 100%);
+  --shadow-card: 0 4px 6px -1px hsl(210 15% 25% / 0.10), 0 2px 4px -1px hsl(210 15% 25% / 0.06);
+  --shadow-hero: 0 20px 25px -5px hsl(210 15% 25% / 0.10), 0 10px 10px -5px hsl(210 15% 25% / 0.04);
+  --shadow-cta:  0 10px 15px -3px hsl(25 95% 55% / 0.30), 0 4px 6px -2px hsl(25 95% 55% / 0.05);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+html { color-scheme: light; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  -webkit-font-smoothing: antialiased;
+}
