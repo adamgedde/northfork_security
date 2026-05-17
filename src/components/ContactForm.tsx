@@ -34,7 +34,7 @@ export default function ContactForm() {
   });
 
   const onSubmit = async (data: FormData) => {
-    await fetch("https://formspree.io/f/placeholder", {
+    await fetch("https://formspree.io/f/mkoewylw", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
