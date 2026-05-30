@@ -112,6 +112,28 @@ Update at the end of every AI coding session. Read at the start of every session
 
 ---
 
+## Session 4 — Formspree Endpoint & SEO Audit
+**Date:** 2026-05-23
+**Phase:** Phase 2
+**Mode:** Claude Code
+
+### What Was Done
+- Confirmed real Formspree endpoint (`https://formspree.io/f/mkoewylw`) is already wired into `src/components/ContactForm.tsx` — this was done prior to this session but not logged
+- Identified SEO gap: site is a client-rendered React SPA; crawlers see an empty `<div id="root">` until JS executes
+
+### Decisions Made
+- Formspree open item is closed
+
+### Open Questions
+- [ ] Confirm domain name with client and configure DNS to Railway
+- [ ] Decide on SEO pre-rendering approach (options: `vite-ssg`, Astro migration, or custom prerender script)
+
+### Next Session Should
+1. Confirm domain and configure DNS to Railway
+2. Implement pre-rendering if SEO is a priority
+
+---
+
 ## Decisions Log (Running)
 
 | Date | Decision | Rationale |
@@ -130,7 +152,7 @@ Update at the end of every AI coding session. Read at the start of every session
 
 | Feature | Deferred To | Reason |
 |---|---|---|
-| Real Formspree endpoint | Phase 2 | Needs account setup and form creation by client |
+| ~~Real Formspree endpoint~~ | ~~Phase 2~~ | Done — `https://formspree.io/f/mkoewylw` wired into `ContactForm.tsx` |
 | Domain DNS configuration | Phase 2 | Needs domain name confirmation from client |
 | Analytics | Phase 3 | Not in scope until site is live |
 | Privacy Policy page | Phase 3 | Footer link is a dead `#` placeholder |

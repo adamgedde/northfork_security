@@ -10,13 +10,13 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const schema = z.object({
-  firstName: z.string().min(1, "Required"),
-  lastName: z.string().min(1, "Required"),
-  email: z.string().email("Valid email required"),
-  phone: z.string().optional(),
-  propertyType: z.string().min(1, "Required"),
-  address: z.string().optional(),
-  message: z.string().optional(),
+  firstName: z.string().min(1, "Required").max(100),
+  lastName: z.string().min(1, "Required").max(100),
+  email: z.string().email("Valid email required").max(254),
+  phone: z.string().max(30).optional(),
+  propertyType: z.string().min(1, "Required").max(100),
+  address: z.string().max(200).optional(),
+  message: z.string().max(500).optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -29,17 +29,24 @@ const contactInfo = [
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const { register, handleSubmit, setValue, formState: { errors, isSubmitting } } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
   const onSubmit = async (data: FormData) => {
-    await fetch("https://formspree.io/f/mkoewylw", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    }).catch(() => {});
-    setSubmitted(true);
+    setSubmitError(false);
+    try {
+      const res = await fetch("https://formspree.io/f/mkoewylw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, _gotcha: "" }),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setSubmitError(true);
+    }
   };
 
   return (
@@ -108,6 +115,10 @@ export default function ContactForm() {
                 className="min-h-[100px]"
               />
             </div>
+            {submitError && (
+                <p className="text-sm text-destructive">Something went wrong. Please try again or call us directly.</p>
+              )}
+            <input type="text" name="_gotcha" style={{ display: "none" }} aria-hidden="true" />
             <Button type="submit" variant="cta" size="lg" className="w-full group" disabled={isSubmitting}>
               {isSubmitting ? "Submitting..." : (
                 <>

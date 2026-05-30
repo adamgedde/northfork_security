@@ -24,6 +24,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a
               href="https://www.facebook.com/northforksecurity"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="flex items-center justify-center w-10 h-10 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
             >
