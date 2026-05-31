@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import { vitePrerenderPlugin } from "vite-prerender-plugin";
 
 const securityHeaders = {
   "X-Content-Type-Options": "nosniff",
@@ -11,7 +12,7 @@ const securityHeaders = {
 };
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), vitePrerenderPlugin({ renderTarget: "#root" })],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
