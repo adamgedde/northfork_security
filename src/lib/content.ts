@@ -15,37 +15,37 @@ export const services = [
 export const industries = [
   {
     icon: "Tractor",
-    title: "Farms.",
-    description: "Secure livestock areas, fuel storage, equipment sheds, and multi-building properties. Rural environments require different planning - we build for that.",
-    benefits: ["Livestock monitoring", "Equipment theft prevention", "Remote property surveillance", "Weather-resistant systems"],
+    title: "Farms",
+    description: "Secure livestock, fuel tanks, equipment sheds, and multi-building properties. Rural environments require different planning - we build for that.",
+    benefits: ["Livestock monitoring", "Equipment and fuel theft prevention", "Remote property surveillance", "Weather-resistant systems"],
     photo: "/farm-security-hero.jpg",
   },
   {
     icon: "Store",
-    title: "Retail.",
+    title: "Retail",
     description: "Reliable camera systems that protect inventory, staff, and customer areas without disrupting operations.",
     benefits: ["Customer & employee safety", "Inventory protection", "Insurance claim support", "Remote monitoring"],
     photo: "/retail-security.jpg",
   },
   {
     icon: "Church",
-    title: "Churches.",
+    title: "Churches",
     description: "Discreet security systems that protect people and property without adding complexity.",
     benefits: ["Property protection", "Event monitoring", "Vandalism prevention", "Community safety"],
     photo: "/church-security.jpg",
   },
   {
     icon: "Building2",
-    title: "Offices.",
-    description: "Secure buildings and dependable systems for daily operations.",
+    title: "Offices and Apartments",
+    description: "Secure buildings and dependable systems for daily operations and tentant safety.",
     benefits: ["Regulatory compliance", "Customer protection", "Incident documentation", "Advanced analytics"],
     photo: "/financial-security.jpg",
   },
 ];
 
 export const stats = [
-  { figure: "500+", label: "properties protected" },
-  { figure: "99.9%", label: "system uptime" },
+  { figure: "100+", label: "devices deployed" },
+  { figure: "99%", label: "system uptime" },
   { figure: "24/7", label: "local support" },
   { figure: "15+", label: "years in Minnesota" },
 ];
