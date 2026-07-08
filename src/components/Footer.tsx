@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-xl font-bold text-white m-0">North Fork Security</p>
-              <p className="text-sm text-white/70 m-0">Video Security &amp; Monitoring Solutions</p>
+              <p className="text-sm text-white/70 m-0">Video Security &amp; Networking Solutions</p>
             </div>
           </div>
           <p className="text-white/80 mb-6 leading-relaxed">

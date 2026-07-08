@@ -10,8 +10,8 @@ export default function Header({ onContact }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const nav = [
     { name: "Video Security", href: "#video-security" },
-    { name: "Services", href: "#services" },
-    { name: "Industries", href: "#industries" },
+    { name: "Maintenance and Services", href: "#maintenance-services" },
+    { name: "Property Types", href: "#property-types" },
   ];
   const linkClass = "text-sm font-medium text-foreground hover:text-primary transition-colors";
 
@@ -30,7 +30,7 @@ export default function Header({ onContact }: HeaderProps) {
             </div>
             <div className="leading-tight">
               <p className="text-xl font-bold text-foreground m-0">North Fork Security</p>
-              <p className="text-xs text-muted-foreground m-0">Video Security &amp; Monitoring Solutions</p>
+              <p className="text-xs text-muted-foreground m-0">Video Security &amp; and Networking Solutions</p>
             </div>
           </div>
 
