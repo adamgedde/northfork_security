@@ -26,15 +26,15 @@ export default function App() {
           <FeatureGrid items={videoFeatures} />
         </Section>
 
-        <Section id="services" tone="section">
+        <Section id="maintenance-services" tone="section">
           <SectionHeader
-            title="Services."
+            title="Maintenance and Services."
             lead="Whether you have an existing system or are starting fresh, we offer focused engagements that meet you where you are."
           />
           <FeatureGrid items={services} />
         </Section>
 
-        <Section id="industries" tone="section">
+        <Section id="property-types" tone="section">
           <SectionHeader
             title="Built for real properties."
             lead="We design systems based on how your property actually operates."

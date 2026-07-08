@@ -30,7 +30,7 @@ export default function Header({ onContact }: HeaderProps) {
             </div>
             <div className="leading-tight">
               <p className="text-xl font-bold text-foreground m-0">North Fork Security</p>
-              <p className="text-xs text-muted-foreground m-0">Video Security &amp; and Networking Solutions</p>
+              <p className="text-xs text-muted-foreground m-0">Video Security &amp; Networking Solutions</p>
             </div>
           </div>
 
