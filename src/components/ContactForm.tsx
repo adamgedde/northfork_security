@@ -60,7 +60,7 @@ export default function ContactForm() {
               Request submitted.
             </div>
             <p className="text-sm text-muted-foreground">
-              We'll contact you within 24 hours to schedule your site assessment.
+              We'll contact you within 48 hours to schedule your site assessment.
             </p>
           </div>
         ) : (
